@@ -3,3 +3,11 @@
     <ion-title>Exercise3</ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-content>
+  <div *ngFor="let color of colores">
+    <app-color-list 
+    [color]="color">
+    </app-color-list>
+  </div>
+</ion-content>
