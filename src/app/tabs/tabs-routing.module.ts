@@ -20,6 +20,10 @@ const routes: Routes = [
       loadChildren: () => import('./exercise3/exercise3.module').then( hijo => hijo.Exercise3PageModule)
     },
     {
+      path: "exercise4",
+      loadChildren: () => import('./exercise4/exercise4.module').then( hijo => hijo.Exercise4PageModule)
+    },
+    {
       path: "",
       redirectTo:"exercise1",
       pathMatch:"full"
@@ -30,6 +34,10 @@ const routes: Routes = [
     path:"",
     redirectTo:"tabs/exercise1",
     pathMatch:"full"
+  },
+  {
+    path: 'exercise4',
+    loadChildren: () => import('./exercise4/exercise4.module').then( m => m.Exercise4PageModule)
   }
 ];
 

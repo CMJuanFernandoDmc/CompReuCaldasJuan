@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { Exercise3PageRoutingModule } from './exercise3-routing.module';
 
 import { Exercise3Page } from './exercise3.page';
+import { SharedComponentsModule } from 'src/app/shared-components/shared-components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Exercise3PageRoutingModule
+    Exercise3PageRoutingModule,
+    SharedComponentsModule
   ],
   declarations: [Exercise3Page]
 })
